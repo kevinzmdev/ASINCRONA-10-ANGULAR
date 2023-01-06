@@ -1,0 +1,11 @@
+
+<h3 class="text-center mt-3 mb-3">Lista de Tareas</h3>
+<section class="">
+  <ul class="">
+    <li *ngFor="let index of datos; let i = index" class="d-flex">
+      {{i+1}} - {{index.nombre}} - {{index.cajaTexto}}
+      <button class="btn btn-danger d-flex " value="{{i}}" (click)="eliminar(i)"><b>X</b></button>
+    </li>
+
+  </ul>
+</section>
